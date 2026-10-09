@@ -17,10 +17,10 @@ function App() { //total height of screensize
               className="absolute w-1.5 h-1.5 rounded-full opacity-60"
               style={{
                 backgroundColor: "#f5fffe",
-                left: `${Math.random() * 100}%`,
-                top: `${Math.random() * 100}%`,
-                animation: `slow-drift ${15 + Math.random() * 20}s ease-in-out infinite`,
-                animationDelay: `${Math.random() * 5}s`,
+                left: `${(i * 37) % 100}%`,
+                top: `${(i * 61) % 100}%`,
+                animation: `slow-drift ${15 + (i * 7) % 20}s ease-in-out infinite`,
+                animationDelay: `${(i * 13) % 5}s`,
               }}
             />
           ))}
