@@ -2,13 +2,15 @@
 import githublogo from "../assets/github.png";
 import linkedinlogo from "../assets/linkedin.png";
 import instagramlogo from "../assets/instagram.png";
+import heroBackground from "../assets/hero-bg.jpg";
+import profilePhoto from "../assets/profile-photo.jpg";
 
 export const Hero = () => {
     return (
         <section className="relative min-h-screen flex items-center overflow-hidden">
             {/* background */}
             <div className="absolute inset-0">
-                <img src="src\assets\hero-bg.jpg" alt="Hero image" className="w-full h-full object-cover opacity-80"/>
+                <img src={heroBackground} alt="Hero image" className="w-full h-full object-cover opacity-80"/>
                 {/* div / = self-closing div */}
                 <div className="absolute inset-0 bg-gradient-to-b from-background/20 via-background/40 to-background"/>
             {/* gradient from bottom > from 20% opacity > 80% > full opacity */}
@@ -82,7 +84,7 @@ export const Hero = () => {
                         <div className="relative glass rounded-3xl p-2 glow-border">
                             {/* ^^outer card container */}
                             <img 
-                                src="src\assets\profile-photo.jpg" 
+                                src={profilePhoto}
                                 alt="brianna azan" 
                                 className="w-full aspect-[4/5] object-cover rounded-2xl"
                             />
